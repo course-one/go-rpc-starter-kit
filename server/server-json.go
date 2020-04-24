@@ -16,7 +16,7 @@ func main() {
 	// create a custom RPC server
 	server := rpc.NewServer()
 
-	// register `mit` object with `rpc.DefaultServer`
+	// register `mit` object with `server`
 	server.Register(mit)
 
 	// create a TCP listener at address : 127.0.0.1:9002
